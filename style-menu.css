@@ -18,7 +18,10 @@ body {
     margin:0 auto;
     padding-top:20px;
   }
-  
+  ul{
+    margin:0;  
+    padding:0;
+  }
   nav > ul , .dropdown-content > li{
     display: flex;
     list-style: none;
@@ -59,10 +62,13 @@ body {
     position: absolute;
     top: 38px;
     display: none;
-    width:max-content;
+    min-width: max-content;
   }
+
   .dropdown-content > li{
     border-bottom: 1px solid white;
+    width:100%;
+    display: block;
   }
   .dropdown-content > li :hover{
     background-color: #D7DCED;
