@@ -1,0 +1,40 @@
+main{
+    width:900px;
+    margin: 2% auto;
+}
+.row{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width:100%;
+ }
+ .col-md-3{
+     flex-basis: 33.33%;
+ }
+
+ /**home page styles**/
+ .cubic-hp-1{
+     display: flex;
+     background-image: url("images/1908364606615453350.JPG");
+     height:350px;
+     align-items: flex-end;
+ }
+ .cubic-hp-1>p{
+     background-color: #767776e5;
+     margin: 0 2% 2% 8%;
+     padding:5%;
+     border-bottom-right-radius: 15%;
+ }
+ .read-more>a{
+    color:white;
+    font-size:small;
+    display: block;
+    text-align: left;
+ }
+ .read-more>a:hover{
+     color:blue;
+ }
+ .cubic-text{
+     color:white;
+     font-size:small;
+ }
