@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    direction: rtl;
+    text-align: right;
+    margin:0;
+  }
+  
+  .container-nav{
+    background-image: linear-gradient(180deg, #909090, #e5e5e5);
+  }
+  nav {
+    background-image: linear-gradient(180deg, #909090, #e5e5e5);
+    width: 900px;
+    margin:0 auto;
+    padding-top:20px;
+  }
+  
+  nav > ul , .dropdown-content > li{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width:100%;
+  }
+  
+  nav > ul > li > a, .dropdown-content > li> a  {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+   }
+  
+  nav > ul > li > a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  nav > ul > li  {
+    border-left: 1px solid white; 
+  }
+  nav > ul > li:last-child{
+    border-left:none;
+  }
+  /*
+  nav > ul > li.active > a {
+    background-color:darkorange;
+    color: white;
+  }
+  */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    background-image: linear-gradient(180deg, #909090, #e5e5e5);
+    position: absolute;
+    top: 38px;
+    display: none;
+    width:max-content;
+  }
+  .dropdown-content > li{
+    border-bottom: 1px solid white;
+  }
+  .dropdown-content > li :hover{
+    background-color: #D7DCED;
+    width:inherit;
+  }
+  .dropdown:hover > .dropdown-content {
+    display: block;
+  }
+ 
+  
+ /****OVER TOP LINE *********/ 
+.overTopRow{
+  display: flex;
+  flex-wrap: wrap;
+  width:65%;
+  float: left;
+}
+.searchTop > a {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url("images/search_button.png") ; 
+    text-decoration: none;
+}
+
+.lang{
+  color:white;
+  margin-left:10px; 
+  font-weight: bold;
+  font-size:small;
+}
+.lang:hover{
+  color:blue;
+  text-decoration: underline;;
+}
+.langDiv
+{
+  flex-basis: 20%;
+  align-items: flex-end;
+   
+}
+.searchTop{
+  flex-basis: 35%;
+  align-items: flex-end;
+}
+
+.logo{
+  position: absolute;
+  top: 21px;
+  right: 60px;
+
+}
