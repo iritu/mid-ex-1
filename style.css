@@ -9,18 +9,20 @@ main{
     display: flex;
     list-style: none;
     padding: 0;
-    width:100%;
+   
  }
  .col-md-3{
      flex-basis: 33.33%;
  }
-
+.col-md-6{
+    flex-basis:50%;
+}
  /**home page styles**/
  .cubic-hp{
      display: flex;
      height:350px;
      align-items: flex-end;
-     border-bottom-right-radius: 10%;
+     border-bottom-right-radius: 20px;
  }
  .cubic-hp-1{
     background-image: url("images/1908364606615453350.JPG");
@@ -37,7 +39,7 @@ main{
      background-color: #767776e5;
      margin: 0 2% 2% 8%;
      padding:5%;
-     border-bottom-right-radius: 15%;
+     border-bottom-right-radius: 20px;
      min-height: 119px;
  }
  .read-more>a{
@@ -52,4 +54,55 @@ main{
  .cubic-text{
      color:white;
      font-size:small;
+ }
+
+
+ /** second row of cubic hp **/
+ .row2cubic{
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(180deg, #FEFEFE, #ECECEC);
+    margin-top:3%;
+    border:1px solid grey;
+    padding: 2%;
+ }
+ .row2cubic-2, .row2cubic-3{
+     margin-right:1.5%;
+ }
+.row2cubic> .row>h3{
+    font-size:0.9em;
+    color:grey;
+    text-align:center;
+    flex-basis: 100%;
+    margin:0;
+    padding-bottom:5px;
+}
+.row2cubic-headerLine{
+    border-bottom:1px solid grey;
+    margin-bottom:2%;
+}
+.col-md-6>a:after, .more-details >a:after{
+     content:"\2977";
+     color:rgb(223, 123, 30);
+     text-decoration: none;
+ }
+
+ .col-md-6>a, .more-details >a {
+     color:grey;
+     font-size:small;
+     text-decoration: underline;
+ }
+ .col-md-6>a:hover, .more-details >a:hover {
+     color:blue;
+ }
+
+ .row2cubic-2 > .row > img, .row2cubic > .row > img{
+     margin:3%  0 3% 0;
+ }
+
+ .more-details{
+    display: block;
+    text-align: left;
+    flex-basis:100%;
  }
